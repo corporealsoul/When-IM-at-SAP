@@ -1,0 +1,27 @@
+Started by an SCM change
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/python-code
+The recommended git tool is: NONE
+No credentials specified
+ > git rev-parse --resolve-git-dir /var/lib/jenkins/workspace/python-code/.git # timeout=10
+Fetching changes from the remote Git repository
+ > git config remote.origin.url https://github.com/corporealsoul/When-IM-at-SAP.git # timeout=10
+Fetching upstream changes from https://github.com/corporealsoul/When-IM-at-SAP.git
+ > git --version # timeout=10
+ > git --version # 'git version 2.43.5'
+ > git fetch --tags --force --progress -- https://github.com/corporealsoul/When-IM-at-SAP.git +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git rev-parse refs/remotes/origin/main^{commit} # timeout=10
+Checking out Revision df57c0ba3addd34729e1c181ec4df6332f6095b8 (refs/remotes/origin/main)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f df57c0ba3addd34729e1c181ec4df6332f6095b8 # timeout=10
+Commit message: "When-IM-at-SAP-Jenkins"
+ > git rev-list --no-walk f79235b4537abf57e3cad36f27dc5b99e17f7a49 # timeout=10
+[python-code] $ /bin/sh -xe /tmp/jenkins14243402861979202315.sh
++ python ./Python/python-code/code.py
+  File "/var/lib/jenkins/workspace/python-code/./Python/python-code/code.py", line 5
+    print "Error generating"
+          ^
+SyntaxError: Missing parentheses in call to 'print'. Did you mean print("Error generating")?
+Build step 'Execute shell' marked build as failure
+Sending e-mails to: uniqs.anup@gmail.com
+Finished: FAILURE
