@@ -1,0 +1,6 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/backup-ansible
+[backup-ansible] $ /bin/sh -xe /tmp/jenkins15676921858799054144.sh
++ sudo cp -r /etc/ansible /home/anup/When-IM-at-SAP/Ansible/backup
+Finished: SUCCESS

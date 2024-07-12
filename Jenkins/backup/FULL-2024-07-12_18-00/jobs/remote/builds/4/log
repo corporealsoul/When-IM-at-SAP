@@ -1,0 +1,10 @@
+Started by user [8mha:////4GUnvQn9nHuLbhWeXBuoGBtBNwKYnXcUkQCrorKV67ylAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZh/dLi1CL95Pyigvyi1MSc4vzSHACa+P9FyAAAAA==[0mAnup Kumar Mondal
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/remote
+SSH: Connecting from host [automation-and-continuous-delivery]
+SSH: Connecting with configuration [infrastructure-management-and-provisioning] ...
+SSH: EXEC: completed after 414 ms
+SSH: Disconnecting configuration [infrastructure-management-and-provisioning] ...
+SSH: Transferred 1 file(s)
+Build step 'Send files or execute commands over SSH' changed build result to SUCCESS
+Finished: SUCCESS

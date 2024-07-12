@@ -1,0 +1,17 @@
+Started by user [8mha:////4GUnvQn9nHuLbhWeXBuoGBtBNwKYnXcUkQCrorKV67ylAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZh/dLi1CL95Pyigvyi1MSc4vzSHACa+P9FyAAAAA==[0mAnup Kumar Mondal
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/take_backup
+[take_backup] $ /bin/sh -xe /tmp/jenkins17283438451929339328.sh
++ sudo cp -r /var/lib/jenkins/backup /home/anup/When-IM-at-SAP
+
+We trust you have received the usual lecture from the local System
+Administrator. It usually boils down to these three things:
+
+    #1) Respect the privacy of others.
+    #2) Think before you type.
+    #3) With great power comes great responsibility.
+
+sudo: a terminal is required to read the password; either use the -S option to read from standard input or configure an askpass helper
+sudo: a password is required
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

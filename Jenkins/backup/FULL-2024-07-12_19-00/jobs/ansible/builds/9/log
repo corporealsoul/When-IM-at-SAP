@@ -1,0 +1,32 @@
+Started by user [8mha:////4GUnvQn9nHuLbhWeXBuoGBtBNwKYnXcUkQCrorKV67ylAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZh/dLi1CL95Pyigvyi1MSc4vzSHACa+P9FyAAAAA==[0mAnup Kumar Mondal
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/ansible
+[ansible] $ ansible-playbook /etc/ansible/playbooks/gather_facts.yml -f 5
+
+PLAY [Check OS Server Health] **************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [infrastructure-management-and-provisioning]
+ok: [monitoring-and-observability]
+
+TASK [Check server uptime] *****************************************************
+changed: [infrastructure-management-and-provisioning]
+changed: [monitoring-and-observability]
+
+TASK [Check memory usage] ******************************************************
+changed: [infrastructure-management-and-provisioning]
+changed: [monitoring-and-observability]
+
+TASK [Display results] *********************************************************
+ok: [infrastructure-management-and-provisioning] => {
+    "msg": "Server uptime:  16:45:20 up  8:02,  2 users,  load average: 0.32, 0.11, 0.03 | Memory usage:                total        used        free      shared  buff/cache   available\nMem:            7685         605        6066          16        1307        7080\nSwap:           5119           0        5119"
+}
+ok: [monitoring-and-observability] => {
+    "msg": "Server uptime:  16:45:20 up  8:01,  2 users,  load average: 0.28, 0.10, 0.03 | Memory usage:                total        used        free      shared  buff/cache   available\nMem:            7685         514        6659          24         780        7170\nSwap:           5119           0        5119"
+}
+
+PLAY RECAP *********************************************************************
+infrastructure-management-and-provisioning : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+monitoring-and-observability : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Finished: SUCCESS
