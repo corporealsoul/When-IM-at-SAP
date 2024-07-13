@@ -1,6 +1,0 @@
-Started by timer
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/backup-jenkins
-[backup-jenkins] $ /bin/sh -xe /tmp/jenkins14217897031579049479.sh
-+ sudo cp -r /var/lib/jenkins/backup /home/anup/When-IM-at-SAP/Jenkins
-Finished: SUCCESS

@@ -1,7 +1,0 @@
-Started by user [8mha:////4GUnvQn9nHuLbhWeXBuoGBtBNwKYnXcUkQCrorKV67ylAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZh/dLi1CL95Pyigvyi1MSc4vzSHACa+P9FyAAAAA==[0mAnup Kumar Mondal
-Running as SYSTEM
-Building in workspace /var/lib/jenkins/workspace/parameter
-[parameter] $ /bin/sh -xe /tmp/jenkins17219877844108086512.sh
-+ echo First name Middle name Last name MALE
-First name Middle name Last name MALE
-Finished: SUCCESS
