@@ -1,0 +1,34 @@
+Started by user [8mha:////4GUnvQn9nHuLbhWeXBuoGBtBNwKYnXcUkQCrorKV67ylAAAAnx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzBEgZh/dLi1CL95Pyigvyi1MSc4vzSHACa+P9FyAAAAA==[0mAnup Kumar Mondal
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/ansible
+[ansible] $ ansible-playbook /etc/ansible/playbooks/gather_facts.yml -f 5
+
+PLAY [Check OS Server Health] **************************************************
+
+TASK [Gathering Facts] *********************************************************
+fatal: [monitoring-and-observability]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Host key verification failed.", "unreachable": true}
+fatal: [automation-and-continuous-delivery]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Host key verification failed.", "unreachable": true}
+fatal: [infrastructure-management-and-provisioning]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: Host key verification failed.", "unreachable": true}
+
+PLAY RECAP *********************************************************************
+automation-and-continuous-delivery : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+infrastructure-management-and-provisioning : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+monitoring-and-observability : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+
+FATAL: command execution failed
+hudson.AbortException: Ansible playbook execution failed
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:328)
+	at org.jenkinsci.plugins.ansible.AnsiblePlaybookBuilder.perform(AnsiblePlaybookBuilder.java:276)
+	at jenkins.tasks.SimpleBuildStep.perform(SimpleBuildStep.java:123)
+	at hudson.tasks.BuildStepCompatibilityLayer.perform(BuildStepCompatibilityLayer.java:80)
+	at hudson.tasks.BuildStepMonitor$1.perform(BuildStepMonitor.java:20)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.perform(AbstractBuild.java:818)
+	at hudson.model.Build$BuildExecution.build(Build.java:199)
+	at hudson.model.Build$BuildExecution.doRun(Build.java:164)
+	at hudson.model.AbstractBuild$AbstractBuildExecution.run(AbstractBuild.java:526)
+	at hudson.model.Run.execute(Run.java:1894)
+	at hudson.model.FreeStyleBuild.run(FreeStyleBuild.java:44)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:442)
+ERROR: Ansible playbook execution failed
+Finished: FAILURE

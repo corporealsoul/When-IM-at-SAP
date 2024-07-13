@@ -1,0 +1,7 @@
+Started by timer
+Running as SYSTEM
+Building in workspace /var/lib/jenkins/workspace/cron
+[cron] $ /bin/sh -xe /tmp/jenkins18411709238391506819.sh
++ echo Aleph-vitatha
+Aleph-vitatha
+Finished: SUCCESS

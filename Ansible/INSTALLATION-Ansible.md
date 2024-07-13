@@ -4,15 +4,15 @@
 [anup@automation-and-continuous-delivery Jenkins]$ sudo yum install ansible
 [anup@automation-and-continuous-delivery Jenkins]$ ansible --version
 
-[anup@automation-and-continuous-delivery playbooks]$ sudo useradd ansible
-[anup@automation-and-continuous-delivery playbooks]$ sudo passwd ansible
-[anup@automation-and-continuous-delivery playbooks]$ sudo usermod -aG wheel ansible
+[anup@automation-and-continuous-delivery playbooks]$ sudo useradd jenkins
+[anup@automation-and-continuous-delivery playbooks]$ sudo passwd jenkins
+[anup@automation-and-continuous-delivery playbooks]$ sudo usermod -aG wheel jenkins
 
 [anup@automation-and-continuous-delivery playbooks]$ sudo su -s /bin/bash jenkins
 
-[anup@automation-and-continuous-delivery playbooks]$ sudo su - ansible
+[anup@automation-and-continuous-delivery playbooks]$ sudo su - jenkins
 [ansible@automation-and-continuous-delivery ~]$ ssh-keygen -t rsa -b 2048
-[ansible@automation-and-continuous-delivery ~]$ ssh-copy-id ansible@192.168.56.101
+[ansible@automation-and-continuous-delivery ~]$ ssh-copy-id jenkins@192.168.56.101
 
 [ansible@automation-and-continuous-delivery ~]$ ansible all -m ping
 
